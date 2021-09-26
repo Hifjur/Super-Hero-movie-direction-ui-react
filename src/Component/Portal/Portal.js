@@ -14,8 +14,8 @@ const Portal = () => {
     },[])
 
     const singerToCart= (singer) => {
-        if(cart.indexOf(singer.name)=== -1){
-            const newCart = [...cart, singer.name]
+        if(cart.indexOf(singer)=== -1){
+            const newCart = [...cart, singer]
             setCart(newCart);
         }
     }
