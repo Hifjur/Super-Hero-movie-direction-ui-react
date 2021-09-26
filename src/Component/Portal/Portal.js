@@ -1,3 +1,4 @@
+//The main area to hire and cart for checkout
 import React from 'react';
 import Singer from '../Singer/Singer';
 import { useEffect, useState } from 'react';
@@ -31,7 +32,8 @@ const Portal = () => {
                 }
             </div>
             <div className="cart-container">
-                <CartItem cart={cart}></CartItem>
+                <h1>Cart</h1>
+                <CartItem  cart={cart}></CartItem>
             </div>
         </div>
     );

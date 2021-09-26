@@ -1,3 +1,4 @@
+//Individual singer card component
 import './Singer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
@@ -13,7 +14,7 @@ const Singer = (props) => {
                     <h3 className="card-header">{name}</h3>
                     <p>Born: {born}</p>
                     <p>Genre: {genre}</p>
-                    <p>Country: {nationality}</p>
+                    <p>Nationality: {nationality}</p>
                     <p>Hire for: ${hire}</p>
                     <button onClick={ () => {
                         props.singerToCart(props.singer)
@@ -22,8 +23,8 @@ const Singer = (props) => {
                         <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
                         </button>
                     <div className="social-container">
-                        <i className="fab fa-spotify social-icon"></i>
-                        <i className="fab fa-twitter social-icon"></i>
+                        <i title="Spotify" className="fab fa-spotify social-icon"></i>
+                        <i title="Twitter" className="fab fa-twitter social-icon"></i>
                     </div>
                 </div>
                 
