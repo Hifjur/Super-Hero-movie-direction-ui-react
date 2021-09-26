@@ -5,4 +5,23 @@
 .card-image{
     width: 100%;
     height: 260px;
+    padding: 30px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 100px;
+}
+
+.btn-hire{
+    padding: 10px;
+    background-color: rgb(226, 204, 0);
+    border: 4px solid white;
+    border-radius: 30px;
+    color:rgb(19, 3, 3);
+}
+
+.social-container{
+    padding-top: 10px;
+}
+
+.social-icon{
+    padding: 20px;
 }

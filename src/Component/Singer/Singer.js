@@ -1,6 +1,9 @@
 import './Singer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const Singer = (props) => {
-    const{key, name, genre, born, nationality, hire, img} = props.singer;
+    const{name, genre, born, nationality, hire, img} = props.singer;
+    
     return (
         <div>
             <div className="card text-white bg-dark mb-3 h-100">
@@ -12,6 +15,16 @@ const Singer = (props) => {
                     <p>Genre: {genre}</p>
                     <p>Country: {nationality}</p>
                     <p>Hire for: ${hire}</p>
+                    <button onClick={ () => {
+                        props.singerToCart(props.singer)
+                    }} 
+                    className="btn-hire">
+                        <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
+                        </button>
+                    <div className="social-container">
+                        <i className="fab fa-spotify social-icon"></i>
+                        <i className="fab fa-twitter social-icon"></i>
+                    </div>
                 </div>
                 
             </div>
